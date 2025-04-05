@@ -1,0 +1,53 @@
+* {
+    font-family: sans-serif;
+}
+
+/* Assignment 1 */
+div {
+    display: inline-block;
+    background-color: lightgray;
+    outline: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.shape1 {
+    border: 5px solid red;
+}
+
+.shape2 {
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+}
+
+.shape3 {
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+/* ################### */
+
+/* Assignment 2 */
+.element {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    background-color: #eeeeee;
+    outline: 10px solid #eeeeee;
+    margin: 20px 10px;
+    border-left: 5px solid;
+}
+
+.element-1 {
+    border-color: #e91e63;
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-color: #009688;
+}
