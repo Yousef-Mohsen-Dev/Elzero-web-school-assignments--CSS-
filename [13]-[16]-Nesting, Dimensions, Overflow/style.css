@@ -1,0 +1,30 @@
+* {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Assignment 1 */
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.title,
+.parent p {
+    color: green;
+}
+
+/* Assignment 2 */
+
+.titles {
+    width: fit-content;
+    max-width: 400px;
+    max-height: 35px;
+    margin: 10px;
+    padding: 10px;
+    background-color: brown;
+    overflow: hidden;
+}
