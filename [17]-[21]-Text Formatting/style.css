@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Assignment 1 */
+.shadow {
+    text-transform: capitalize;
+    text-shadow: 0.5px 0.5px 0px #f04235, 1px 1px 0px #2395f1,
+        1.5px 1.5px 0px #9e2bb1;
+}
+
+/* Assignment 2 */
+p {
+    margin: 20px;
+    text-align: center;
+}
+
+p.one {
+    text-transform: uppercase;
+}
+
+p.two {
+    text-transform: capitalize;
+}
+
+p.three {
+    text-transform: lowercase;
+}
+
+/* Assignment 3 */
+div {
+    width: 400px;
+    background-color: #eeeeee;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Assignment 4 */
+a {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+
+    text-transform: capitalize;
+    text-decoration: none;
+
+    font-weight: 600;
+    color: white;
+    background-color: #009688;
+    border-bottom: 4px solid #00514a;
+}
