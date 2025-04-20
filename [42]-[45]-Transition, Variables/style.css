@@ -1,0 +1,74 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Assignment 1 */
+.assignment-1 .parent {
+    background-color: #eee;
+    padding: 20px;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    margin: 40px auto;
+    text-transform: capitalize;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+}
+.assignment-1 .parent:hover {
+    margin: 20px auto;
+}
+.assignment-1 .parent .child {
+    background-color: #ddd;
+    padding: 20px;
+    width: 400px;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px auto;
+    transition: margin 0.5s 0.5s;
+    -webkit-transition: margin 0.5s 0.5s;
+    -moz-transition: margin 0.5s 0.5s;
+    -ms-transition: margin 0.5s 0.5s;
+    -o-transition: margin 0.5s 0.5s;
+}
+.assignment-1 .parent:hover .child {
+    margin: 40px auto;
+}
+
+/* Assignment 2 */
+.assignment-2 div {
+    background-color: #eee !important;
+    border: none !important;
+    font-size: 0 !important;
+    color: transparent !important;
+    position: relative;
+}
+.assignment-2 div::after {
+    content: "Elzero";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Assignment 3 */
+:root {
+    /* --mainColor: #009688;
+    --mainPadding: 10px; */
+}
+
+.assignment-3 div {
+    padding: var(--mainPadding, 10px);
+    margin: var(--mainPadding, 10px);
+    border: 2px solid var(--mainColor, black);
+    color: var(--mainColor, red);
+}
