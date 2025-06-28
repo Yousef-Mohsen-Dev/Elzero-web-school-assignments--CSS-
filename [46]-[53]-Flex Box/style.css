@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ############## */
+/* Assignment 1 */
+/* ############## */
+.assignment-1 div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #eee;
+    color: #ff5722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.assignment-1 div::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #ff5722;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: -1;
+    left: 5px;
+}
+.assignment-1 div::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #03a9f4;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: -1;
+    right: 5px;
+}
+
+/* ############## */
+/* Assignment 2 */
+/* ############## */
+.assignment-2 .parent {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.assignment-2 .parent div {
+    width: calc(95% / 3);
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f44336;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ############## */
+/* Assignment 3 */
+/* ############## */
+.assignment-3 .parent {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.assignment-3 .parent div {
+    width: calc(95% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607d8b;
+    color: #eee;
+    box-sizing: border-box;
+}
+.assignment-3 .parent div.one {
+    order: 6;
+    padding: 10px;
+    align-self: flex-end;
+}
+.assignment-3 .parent div.two {
+    order: 5;
+}
+.assignment-3 .parent div.three {
+    order: 2;
+    padding: 10px;
+    align-self: flex-start;
+}
+.assignment-3 .parent div.four {
+    order: 3;
+}
+.assignment-3 .parent div.five {
+    order: 4;
+}
+.assignment-3 .parent div.six {
+    order: 1;
+}
+
+/* ############## */
+/* Assignment 4 */
+/* ############## */
+.assignment-4 .parent {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.assignment-4 .parent div {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(90% / 3);
+    background-color: #009688;
+    color: #eee;
+    box-sizing: border-box;
+}
+.assignment-4 .parent div.two {
+    width: 50%;
+    align-self: flex-start;
+}
+
+/* ############## */
+/* Assignment 5 */
+/* ############## */
+.assignment-5 .parent {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.assignment-5 .parent div {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #009688;
+    color: #eee;
+    box-sizing: border-box;
+}
+.assignment-5 .parent div.one {
+    order: 1;
+    margin-left: 30%;
+    background-color: #ff9800;
+}
+.assignment-5 .parent div.two {
+    order: 4;
+    margin-right: 30%;
+    background-color: #8bc34a;
+}
+.assignment-5 .parent div.three {
+    order: 2;
+    margin-left: 40%;
+    background-color: #795548;
+}
+.assignment-5 .parent div.four {
+    order: 3;
+    margin-right: 40%;
+    background-color: #673ab7;
+}
+/* ############## */
+/* Assignment 6 */
+/* ############## */
+:root {
+    --main-color: #ddd;
+    --main-space: 10px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+
+.assignment-6 .page {
+    padding: var(--main-space);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.assignment-6 .page .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--main-space);
+}
+.assignment-6 .page .header .logo {
+    display: flex;
+    /* width: 10%; */
+    flex-grow: 1;
+    margin-right: var(--main-space);
+    align-items: center;
+    justify-content: center;
+    padding: var(--main-space);
+    background-color: var(--main-color);
+}
+.assignment-6 .page .header .links {
+    list-style: none;
+    padding: var(--main-space);
+    background-color: var(--main-color);
+    /* width: calc(100% - (10% + (var(--main-space)))); */
+    flex-grow: 9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.assignment-6 .page .header .links li {
+    margin-left: var(--main-space);
+}
+
+/* Main Area */
+.assignment-6 .main-area {
+    display: flex;
+    /* height: 100%; */
+    flex: 1 1 auto;
+}
+.assignment-6 .main-area .content {
+    padding: var(--main-space);
+    /* width: 70%; */
+    flex-grow: 7;
+    margin-right: var(--main-space);
+    background-color: var(--main-color);
+}
+.assignment-6 .main-area .sidebar {
+    padding: var(--main-space);
+    /* width: calc(100% - (70% + (var(--main-space)))); */
+    flex-grow: 3;
+    background-color: var(--main-color);
+}
+
+/* Footer */
+.assignment-6 .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    margin-top: var(--main-space);
+    padding: var(--main-space);
+}
