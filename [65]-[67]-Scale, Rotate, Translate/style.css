@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ############ */
+/* Assignment 1 */
+/* ############ */
+.assignment-1 div {
+    color: #03a9f4;
+    background-color: #eee;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.assignment-1 div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #03a9f4;
+    z-index: -1;
+    transform: rotate(-5deg) scale(1.05);
+    -webkit-transform: rotate(-5deg) scale(1.05);
+    -moz-transform: rotate(-5deg) scale(1.05);
+    -ms-transform: rotate(-5deg) scale(1.05);
+    -o-transform: rotate(-5deg) scale(1.05);
+}
+.assignment-1 div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #e91e63;
+    z-index: -2;
+    transform: rotate(5deg) scale(1.05);
+    -webkit-transform: rotate(5deg) scale(1.05);
+    -moz-transform: rotate(5deg) scale(1.05);
+    -ms-transform: rotate(5deg) scale(1.05);
+    -o-transform: rotate(5deg) scale(1.05);
+}
+
+/* ############ */
+/* Assignment 2 */
+/* ############ */
+.assignment-2 {
+    height: 100vh;
+}
+.assignment-2 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #eee;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.assignment-2 div::before,
+.assignment-2 div::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+.assignment-2 div::before {
+    border-top-color: #e91e63;
+    border-right-color: #e91e63;
+    border-bottom-color: #e91e63;
+}
+.assignment-2 div::after {
+    border-top-color: #03a9f4;
+    border-left-color: #03a9f4;
+    border-bottom-color: #03a9f4;
+    width: 220px;
+    height: 220px;
+}
+/* ############ */
+/* Assignment 3 */
+/* ############ */
+.assignment-2 div:hover::after,
+.assignment-2 div:hover::before {
+    transform: translate(-50%, -50%) rotate(350deg);
+    -webkit-transform: translate(-50%, -50%) rotate(350deg);
+    -moz-transform: translate(-50%, -50%) rotate(350deg);
+    -ms-transform: translate(-50%, -50%) rotate(350deg);
+    -o-transform: translate(-50%, -50%) rotate(350deg);
+}
+.assignment-2 div::after {
+    transition-delay: 0.5s;
+}
