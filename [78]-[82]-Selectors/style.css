@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ############ */
+/* Assignment 1 */
+/* ############ */
+.assignment-1 div.main.red {
+  color: red;
+}
+/* ############ */
+/* Assignment 2 */
+/* ############ */
+.assignment-2 div.parent:first-child div:last-child {
+  color: red;
+}
+/* ############ */
+/* Assignment 3 */
+/* ############ */
+.assignment-3 div.parent:nth-child(2) div.baby {
+  color: red;
+}
+/* ############ */
+/* Assignment 4 */
+/* ############ */
+.assignment-4 > p ~ div:nth-child(n + 4):nth-child(-n + 6) {
+  color: red;
+}
+/* ############ */
+/* Assignment 5 */
+/* ############ */
+.assignment-5 div:nth-child(2) div[title] {
+  color: red;
+}
+/* ############ */
+/* Assignment 6 */
+/* ############ */
+.assignment-6 div:not(.no-need) div:nth-last-of-type(2) {
+  color: red;
+}
+/* ############ */
+/* Assignment 7 */
+/* ############ */
+.assignment-7 div:nth-child(1) div:nth-of-type(2) {
+  color: red;
+}
+/* ############ */
+/* Assignment 8 */
+/* ############ */
+.assignment-8 div :not(h3):not(:first-child):not(:last-child) {
+  color: red;
+}
