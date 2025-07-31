@@ -4,8 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Assignments</title>
+    <style>
+      :root {
+        --main-color: #614ca7;
+        --secondary-color: #f4f4f9;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--secondary-color);
+      }
+      header {
+        background-color: var(--main-color);
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+      }
+      header a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 20px 20px 20px;
+      }
+      section .card {
+        width: 160px;
+        height: 160px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        border: 3px solid var(--main-color);
+        text-align: center;
+      }
+
+      section .card .title {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      section .card .title h2 {
+        font-size: 14px;
+        color: var(--main-color);
+      }
+      section .card .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4px;
+      }
+      section .card .buttons a {
+        display: block;
+        width: 80%;
+        text-decoration: none;
+        border-radius: 10px;
+        color: var(--secondary-color);
+        background-color: var(--main-color);
+        font-size: 12px;
+        padding: 5px;
+        transition: transform 0.3s;
+      }
+      section .card .buttons a:nth-child(n + 2) {
+        color: var(--main-color);
+        background-color: var(--secondary-color);
+        border: 2px solid var(--main-color);
+      }
+      section .card .buttons a:hover {
+        transform: scale(1.1);
+      }
+      @media (max-width: 600px) {
+        header {
+          height: 100px;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #ddd;
+        box-shadow: 0 0 1px black inset;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #614ca7bb;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--main-color);
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <a
+        href="https://elzero.org/category/assignments/css-assignments/"
+        target="_blank"
+      >
+        <h1>Elzero Web School | CSS Assignments</h1>
+      </a>
+    </header>
+    <section>
+      <div class="card">
+        <div class="title">
+          <h2>[01]-[04]</h2>
+          <h2>Elements And Naming</h2>
+        </div>
+        <div class="buttons">
+          <a
+            href="https://elzero.org/css-assignments-lesson-from-1-to-4/"
+            target="_blank"
+            >The Assignment</a
+          >
+          <a
+            href="./[01]-[04]-Elements And Naming/test-project/index.html"
+            target="_blank"
+            >My Solution</a
+          >
+          <a
+            href="https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B01%5D-%5B04%5D-Elements%20And%20Naming"
+            target="_blank"
+            >My Code</a
+          >
+        </div>
+      </div>
+    </section>
     <script>
       const AssignmentsNames = [
         "[01]-[04]-Elements And Naming",
@@ -29,6 +166,66 @@
         "[83]-[85]-Media Queries",
         "[86]-[88]-Global Values",
       ];
+      const assignmentsLinks = [
+        "https://elzero.org/css-assignments-lesson-from-1-to-4/",
+        "https://elzero.org/css-assignments-lesson-from-5-to-8/",
+        "https://elzero.org/css-assignments-lesson-from-9-to-12/",
+        "https://elzero.org/css-assignments-lesson-from-13-to-16/",
+        "https://elzero.org/css-assignments-lesson-from-17-to-21/",
+        "https://elzero.org/css-assignments-lesson-from-22-to-26/",
+        "https://elzero.org/css-assignments-lesson-from-27-to-29/",
+        "https://elzero.org/css-assignments-lesson-from-30-to-33/",
+        "https://elzero.org/css-assignments-lesson-from-34-to-37/",
+        "https://elzero.org/css-assignments-lesson-from-38-to-41/",
+        "https://elzero.org/css-assignments-lesson-from-42-to-45/",
+        "https://elzero.org/css-assignments-lesson-from-46-to-53/",
+        "https://elzero.org/css-assignments-lesson-from-54-to-56/",
+        "https://elzero.org/css-assignments-lesson-from-57-to-64/",
+        "https://elzero.org/css-assignments-lesson-from-65-to-67/",
+        "https://elzero.org/css-assignments-lesson-from-68-to-73/",
+        "https://elzero.org/css-assignments-lesson-from-74-to-77/",
+        "https://elzero.org/css-assignments-lesson-from-78-to-82/",
+        "https://elzero.org/css-assignments-lesson-from-83-to-85/",
+        "https://elzero.org/css-assignments-lesson-from-86-to-88/",
+      ];
+      const myCodeLinks = [
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B01%5D-%5B04%5D-Elements%20And%20Naming",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B05%5D-%5B08%5D-Background%2C%20Padding%2C%20Margin",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B09%5D-%5B12%5D-Border%2C%20Outline%2C%20Display",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B13%5D-%5B16%5D-Nesting%2C%20Dimensions%2C%20Overflow",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B17%5D-%5B21%5D-Text%20Formatting",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B22%5D-%5B26%5D-Inheritance%2C%20Typography",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B27%5D-%5B29%5D-Float%2C%20Opacity",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B30%5D-%5B33%5D-Position%2C%20List%2C%20Table",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B34%5D-%5B37%5D-Pseudo%20Classes%2C%20Pseudo%20Elements",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B38%5D-%5B41%5D-Border%20Radius%2C%20Box%20Shadow",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B42%5D-%5B45%5D-Transition%2C%20Variables",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B46%5D-%5B53%5D-Flex%20Box",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B54%5D-%5B56%5D-Filters%2C%20Gradient",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B57%5D-%5B64%5D-Grid",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B65%5D-%5B67%5D-Scale%2C%20Rotate%2C%20Translate",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B68%5D-%5B73%5D-Skew%2C%20Matrix%2C%203D%20Transform",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B74%5D-%5B77%5D-Animation",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B78%5D-%5B82%5D-Selectors",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B83%5D-%5B85%5D-Media%20Queries",
+        "https://github.com/Yousef-Mohsen-Dev/Elzero-web-school-assignments--CSS-/tree/main/%5B86%5D-%5B88%5D-Global%20Values",
+      ];
+      const container = document.querySelector("section");
+      const cardTemplate = document.querySelector("section .card");
+
+      for (let i = 1; i < AssignmentsNames.length; i++) {
+        const newCard = cardTemplate.cloneNode(true);
+
+        const titles = newCard.querySelectorAll(".title h2");
+        titles[0].textContent = AssignmentsNames[i].slice(0, 9);
+        titles[1].textContent = AssignmentsNames[i].slice(10);
+
+        const links = newCard.querySelectorAll(".buttons a");
+        links[0].href = assignmentsLinks[i];
+        links[1].href = "./" + AssignmentsNames[i] + "/index.html";
+        links[2].href = myCodeLinks[i];
+        container.appendChild(newCard);
+      }
     </script>
   </body>
 </html>
